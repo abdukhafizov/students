@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.inpts {
+    display: flex;
+    flex-direction: row;
+}
+
+input {
+    width: 300px;
+    height: 50px;
+    margin-right: 20px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.show {
+    width: 120px;
+    height: 50px;
+    background-color: rgb(54, 54, 247);
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+    /* border: 2px solid blue; */
+}
+
+.rubbish {
+    width: 20px;
+}
+
+.edit_img {
+    width: 20px;
+}
+
+table {
+    width: 80%;
+    margin-top: 20px ;
+}
+
+
+th,
+td {
+    padding: 15px 0;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+
+}
+
+th {
+    font-weight: 700;
+    color: gray;
+}
+
+.remove-anim {
+    padding: 0px !important;
+    width: 0px !important;
+
+    overflow: hidden;
+}
+
+.remove-anim .pokup {
+    opacity: 0;
+}
+
+.remove-anim .minutes {
+    opacity: 0;
+}
+
+dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    translate: -70% -170%;
+        padding: 20px;
+    border: none;
+    border-radius: 12px;
+    .inner-modal {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+}
+
+.s_c{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(54, 54, 247);
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    transition: 1s;
+}
+
+button:active {
+    transform: scale(1);
+    box-shadow: inset 4px 2px 3px rgba(0, 0, 0, 0.347);
+}
+
+button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+button:not(:hover) {
+    transition: 1s;
+}

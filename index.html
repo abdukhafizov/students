@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+
+    <section class="about">
+        <div class="container">
+            <h1>Добавление , Изменение и удаление элемента из таблицы</h1>
+            <form name="ips">
+                <div class="inpts">
+                    <div class="inps_sort">
+                        <p class="name_txt">name</p>
+                        <input class="inps_txt named" placeholder="Name" name="name" type="text">
+                    </div>
+                    <div class="inps_sort">
+
+                        <p class="age_txt">Age</p>
+                        <input class="inps_txt aged" name="age" placeholder="Age" type="number">
+                        <button class="show">Показать</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <div class="container">
+
+        <table cellspacing="0" cellpadding="4">
+            <thead>
+                <th>ID</th>
+                <th>Имя студента</th>
+                <th>Год рождения</th>
+                <th>Действия</th>
+            </thead>
+            <tbody>
+                <!-- <tr>
+                    <td>1</td>
+                    <td>Rayan Gosling</td>
+                    <td>1997</td>
+                    <td>
+                        <img class="edit_img" src="./img/edit-svgrepo-com.svg">
+                        <img class="rubbish" src="./img/rubbish-bin-svgrepo-com.svg" alt="">
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+
+    <dialog data-modal>
+        <div class="inner-modal">
+            <span>change task to:</span>
+            <form name="change_task">
+                <input type="text" name="task">
+                <button class="s_c">save and close</button>
+            </form>
+        </div>
+    </dialog>
+
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
